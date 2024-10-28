@@ -26,32 +26,8 @@
     <!-- Background with blur for the header -->
 
     <div class="background" id="home">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" fill="yes">
-            <g filter="url(#filter0_f_5_603)">
-              <path d="M255.264 -66.6111L723.41 -298L759.459 -168.139L991.827 -185.847L1087.31 -94.3542H926.062L1011.8 29.6042L798.917 57.3472L697.104 -168.139L634.263 -46.5417L255.264 -66.6111Z" fill="url(#paint0_linear_5_603)"/>
-              <path d="M1070.74 157.104L1418.57 -46.5417H1440L1405.41 83.3195C1416.94 154.546 1438.34 297 1431.72 297C1425.09 297 1323.41 238.366 1273.4 209.049L1011.8 297L833.505 240.924L1070.74 157.104Z" fill="url(#paint1_linear_5_603)"/>
-              <path d="M347.821 93.3542L159.21 45.9788L94.0189 -247.826V3.63196H64.3031V93.3542L0 240.924L145.169 279.292L347.821 93.3542Z" fill="url(#paint2_linear_5_603)"/>
-            </g>
-            <defs>
-              <filter id="filter0_f_5_603" x="-500" y="-798" width="2440" height="1595" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                <feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_5_603"/>
-              </filter>
-              <linearGradient id="paint0_linear_5_603" x1="74.1118" y1="-298" x2="1415.97" y2="145.468" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#710000"/>
-                <stop offset="1" stop-color="#070065"/>
-              </linearGradient>
-              <linearGradient id="paint1_linear_5_603" x1="74.1118" y1="-298" x2="1415.97" y2="145.468" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#710000"/>
-                <stop offset="1" stop-color="#070065"/>
-              </linearGradient>
-              <linearGradient id="paint2_linear_5_603" x1="74.1118" y1="-298" x2="1415.97" y2="145.468" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#710000"/>
-                <stop offset="1" stop-color="#070065"/>
-              </linearGradient>
-            </defs>
-          </svg>
+      <div class="background-r"></div>
+      <div class="background-b"></div>
     </div>
 
     <h1>hi, I’m Liam</h1>
@@ -59,18 +35,21 @@
     <h2>A young developer and designer that work
         on design of UI / UX for apps , website and system</h2>
 
-    <h3 class="h3">btw its a v0.1 i'm learning react rn for a more beautiful experience</h3>    
+    <h3 class="h3">btw its a v0.2 i'm learning react rn for a more beautiful experience for the v2</h3>    
 
         <div class="button-home">
         <div class="button"> 
             <a href="mailto:liam.mgnr@outlook.com?subject=I'm%20contacting%20your%20from%20your%20portfolio%20" class="button-text">Contact me !</a>
         </div>
         <div class="button large">
-            <a href="" class="newsletter">Or leave your email for subcribe to my newsletter!</a>
+            <form action="/subscribe" method="post" class="newsletter-form">
+              <input type="email" id="email" name="email" class="newsletter-input" placeholder="Or subscribe and being up to date !" required>
+              <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
         </div>
         </div>
 
-
+        <div class="test"></div>
 
         <div class="bento">
           <div class="box1"></div>

@@ -13,6 +13,52 @@ html {
     box-sizing: border-box;
 }
 
+.background {
+    width: 100%;
+    height: 30%;
+    position: absolute;  
+    z-index: -1;
+}
+
+.background-r {
+    background: linear-gradient(98deg, rgba(113, 0, 0, 0.60) 4.53%, rgba(7, 0, 101, 0.75) 95.47%);
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    filter: blur(250px);
+    animation: swapBackgrounds1 10s infinite alternate;
+}
+
+.background-b {
+    margin-left: 60%;
+    background: linear-gradient(98deg, rgba(113, 0, 0, 0.60) 4.53%, rgba(7, 0, 101, 0.75) 95.47%);
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    filter: blur(250px);
+    animation: swapBackgrounds2 10s infinite alternate;
+}
+
+@keyframes swapBackgrounds1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(150%);
+    }
+}
+
+@keyframes swapBackgrounds2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+}
+
+
 
 
 .icon-home {    
@@ -61,17 +107,7 @@ body {
     justify-content: center;
 }
 
-.background {
-    width: 100%;
-    flex: 1 0 0;
-    align-self: stretch;
-    fill: linear-gradient(98deg, #710000 4.53%, #070065 100%);
-    filter: blur(50%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
+
 
 h1 {
     margin-top: 8%;
@@ -157,6 +193,27 @@ h3 {
 
 .button.large {
     width: 625px;
+}
+
+.newsletter-input {
+    width: 100%px;
+    margin-left: 5%;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+
+
+.newsletter-button{
+   background-color: #FFF;
+   margin-left: 210%;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   align-items: center;
 }
 
 .bento {
