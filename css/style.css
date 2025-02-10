@@ -13,6 +13,11 @@ html {
     box-sizing: border-box;
 }
 
+.home-up{
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff00;
+}
 .background {
     width: 100%;
     height: 30%;
@@ -184,38 +189,79 @@ h3 {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(15px);
-    position: relative;
+    position: relative; 
     align-items: center;
     display: flex;
     background: rgba(255, 255, 255, 0.05);
     width: 200px;
     height: 60px;
+    overflow: hidden; 
+    transition: all 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    transform: scale(1.05);
+  }
+  
+  .button.large {
+    width: 600px;
+    padding-right: 60px;
+    transition: transform 0.3s ease;
 }
 
-.button.large {
-    width: 625px;
+.button.large:hover {
+    transform: scale(1.05);
 }
 
-.newsletter-input {
-    width: 100%px;
-    margin-left: 5%;
+  
+  .newsletter-input {
+    width: 100%;
+    padding: 10px 15px; 
     background: transparent;
     border: none;
+    color: white;  
     font-size: 16px;
     outline: none;
-}
+  }
 
-
-
-.newsletter-button{
-   background-color: #FFF;
-   margin-left: 210%;
-   justify-content: center;
-   margin-left: auto;
-   margin-right: auto;
-   display: flex;
-   align-items: center;
-}
+  
+  
+  .newsletter-button {
+      position: absolute;
+      right: 5px;
+      top: 10%;
+      height: 80%; 
+      background-color: rgba(255,255,255,0.15);
+      color: rgb(255, 255, 255); 
+      border: none;
+      padding: 0 20px; 
+      font-family: "Neue Power";
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 15px 15px 15px 15px; 
+      transition: background-color 0.3s ease; 
+  }
+  
+  .newsletter-button:hover {
+      background-color: #131218; 
+  }
+  @media (max-width: 768px) {
+      .button-home{
+          margin-left: 20px;
+      }
+    .button.large {
+      width: 100%; /* Full width on smaller screens */
+        padding-right: 0px;
+    }
+    .newsletter-button{
+      position: relative;
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 20px;
+    }
+  }
+  
 
 .bento {
     display: flex;
