@@ -22,3 +22,7 @@ document.addEventListener('scroll', function () {
 document.querySelector('.newsletter-button').addEventListener('click', function() {
     alert('Subscribed to the newsletter!');
 });
+
+function toggleTheme() {
+    document.body.classList.toggle('light-mode');
+}
